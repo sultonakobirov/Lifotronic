@@ -5,303 +5,148 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../scss/style.css">
+    <link rel="stylesheet" media="(max-width:1700px)" href="../scss/media.css">
     <title>Lifotronic</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
-<body>
-    <div class="container">
-        <header class="header">
-            <div class="iconname-container">
-                <div class="icon">
-                    <a href="#">
-                    <img src="..//images/icon.svg" alt="icon">
-                    </a>
-                </div>
-                <p>Лабораторное оборудование и расходные материалы</p>
+<body style="background-color: #e1e1e145;">
+    <header class="header">
+        <div class="iconname-container">
+            <div class="icon">
+                <a id="home" class="header-link" href="..//index.html">
+                <img src="..//images/icon.svg" alt="icon">
+                </a>
             </div>
+            <p>Лабораторное оборудование и расходные материалы</p>
+        </div>
+        <ul>
+            <li>
+                <a id="description" class="header-link" href="#">
+                    Lifotronic
+                </a>
+            </li>
+
+            <li class="catalogue">
+                <a id="catalogue" class="header-link" href="#">
+                    Каталог
+                </a>
+                <ul class="additional-list">
+                    <li class="products">IVD Products <div></div>
+                        <ul class="inner-list">
+                            <li><a href="..//html/catalogue.html">HPLC system</a></li>
+                            <li>ECLIA system</li>
+                            <li>Hematology system</li>
+                        </ul>
+                    </li>
+                    <li>Therapeutic Products <div></div></li>
+                    <li>Medical & Aesthetic Laser <div></div></li>
+                </ul>
+            </li>
+            <li>
+                <a id="news" class="header-link" href="#">
+                    Новости
+                </a>
+            </li>
+            <li>
+                <a id="service-center" class="header-link" href="#">
+                    Сервисный центр
+                </a>
+            </li>
+            <li>
+                <a id="contacts" class="header-link" href="#">
+                    Контакты
+                </a>
+            </li>
+        </ul>
+        <div class="search-block">
+            <a class="tel-number" href="tel:+7 (343) 311-22-19">
+                +7 (343) 311-22-19
+            </a>
+            <input placeholder="Поиск..." class="search-input" type="text">
+            <img class="search-img" src="..//images/search.svg" alt="search">
+            
+        </div>
+        <div class="menu-btn">
+            <div class="btn-line l1"></div>
+            <div class="btn-line l2"></div>
+            <div class="btn-line l3"></div>
+          </div>
+        <div class="header-media">
             <ul>
                 <li>
-                    <a href="#">
+                    <a id="description" class="header-link" href="#">
                         Lifotronic
                     </a>
                 </li>
-    
                 <li class="catalogue">
-                    <a href="#">
-                        Каталог
+                    <a id="catalogue" class="" href="#">
+                        <button class="accordion">Каталог</button>
+                        <div class="panel">
+                        <ul class="">
+                            <li><a href="..//html/catalogue.html">HPLC system</a></li>
+                            <li>ECLIA system</li>
+                            <li>Hematology system</li>
+                        </ul>
+                                
+                        </div>
                     </a>
-                    <ul class="additional-list">
-                        <li class="products">IVD Products <div></div>
-                            <ul class="inner-list">
-                                <li>HPLC system</li>
-                                <li>ECLIA system</li>
-                                <li>Hematology system</li>
-                            </ul>
-                        </li>
-                        <li>Therapeutic Products <div></div></li>
-                        <li>Medical & Aesthetic Laser <div></div></li>
-                    </ul>
                 </li>
                 <li>
-                    <a href="#">
+                    <a id="news" class="header-link" href="#">
                         Новости
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a id="service-center" class="header-link" href="#">
                         Сервисный центр
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a id="contacts" class="header-link" href="#">
                         Контакты
                     </a>
                 </li>
             </ul>
-            <div class="search-block">
-                <a class="tel-number" href="#">
-                    +7 (343) 311-22-19
-                </a>
-                <input placeholder="Поиск..." class="search-input" type="text">
-                <img class="search-img" src="..//images/search.svg" alt="search">
-            </div>
-        </header>
-        <section class="section">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/h8.svg" alt="h8">
-                                </div>
-                                <div class="product-text">
-                                    <h2>H8</h2>
-                                    <span  class="text-title">Aнализатор гемоглобина Lifotromic</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/rapid-covid-test.png" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>COVID-19</h2>
-                                    <span class="text-title">Экспресс тест на антитела от коронавируса  SARS CoV-2</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/h9.svg" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>H9</h2>
-                                    <span class="text-title">Aнализатор гемоглобина Lifotromic</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/gh-900plus.png" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>GH-900PLUS</h2>
-                                    <span class="text-title">Анализатор HbA1c</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/ecl8000.png" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>ECL8000 </h2>
-                                    <span class="text-title">Aнализатор гемоглобина Lifotromic</span>
-                        
-                                </div>
-                            </div>
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/rapid-covid-test.png" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>COVID-19</h2>
-                                    <span class="text-title">Экспресс тест на антитела от коронавируса  SARS CoV-2</span>
-                                </div>
-                            </div>
+        </div>
+    </header>
+    <div class="container cont-cat">
+        <div class="anti-wrapper">
+            <section class="side-bar">
+                <ul>
+                    <li class="redd">HPLC система <span></span></li>
+                    <li>ECLIA система <span></span></li>
+                    <li>Гематологическая система <span></span></li>
+                    <li>POCT <span></span></li>
+                    <li>Молекулярная диагностика <span></span></li>
+                    <li>Экспресс-тест <span></span></li>
+                </ul>
+            </section>
+            <section class="section-catalogue">
+                <div class="text">
+                    <span>Главная  -  Каталог</span>
+                    <h1>HPLC cистема</h1>
+                </div>
+                <div style="display: none;" class="normal-section">
+                </div>
+                <div class="swiper-contentt">
+                    <div class="swiper mySwiper5">
+                        <div class="swiper-wrapper catalogue-wrapper">
                         </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/h8.svg" alt="h8">
-                                </div>
-                                <div class="product-text">
-                                    <h2>H8</h2>
-                                    <span  class="text-title">Aнализатор гемоглобина Lifotromic</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/h9.svg" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>H9</h2>
-                                    <span class="text-title">Aнализатор гемоглобина Lifotromic</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/gh-900plus.png" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>GH-900PLUS</h2>
-                                    <span class="text-title">Анализатор HbA1c</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/ecl8000.png" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>ECL8000 </h2>
-                                    <span class="text-title">Aнализатор гемоглобина Lifotromic</span>                    
-                                </div>
-                            </div>
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/rapid-covid-test.png" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>COVID-19</h2>
-                                    <span class="text-title">Экспресс тест на антитела от коронавируса  SARS CoV-2</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/rapid-covid-test.png" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>COVID-19</h2>
-                                    <span class="text-title">Экспресс тест на антитела от коронавируса  SARS CoV-2</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/h8.svg" alt="h8">
-                                </div>
-                                <div class="product-text">
-                                    <h2>H8</h2>
-                                    <span  class="text-title">Aнализатор гемоглобина Lifotromic</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/h9.svg" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>H9</h2>
-                                    <span class="text-title">Aнализатор гемоглобина Lifotromic</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/gh-900plus.png" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>GH-900PLUS</h2>
-                                    <span class="text-title">Анализатор HbA1c</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/ecl8000.png" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>ECL8000 </h2>
-                                    <span class="text-title">Aнализатор гемоглобина Lifotromic</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/rapid-covid-test.png" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>COVID-19</h2>
-                                    <span class="text-title">Экспресс тест на антитела от коронавируса  SARS CoV-2</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/rapid-covid-test.png" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>COVID-19</h2>
-                                    <span class="text-title">Экспресс тест на антитела от коронавируса  SARS CoV-2</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/h8.svg" alt="h8">
-                                </div>
-                                <div class="product-text">
-                                    <h2>H8</h2>
-                                    <span  class="text-title">Aнализатор гемоглобина Lifotromic</span>
-                                </div>
-                            </div>
-                            
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/h9.svg" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>H9</h2>
-                                    <span class="text-title">Aнализатор гемоглобина Lifotromic</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/gh-900plus.png" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>GH-900PLUS</h2>
-                                    <span class="text-title">Анализатор HbA1c</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/ecl8000.png" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>ECL8000 </h2>
-                                    <span class="text-title">Aнализатор гемоглобина Lifotromic</span>                    
-                                </div>
-                            </div>
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/rapid-covid-test.png" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>COVID-19</h2>
-                                    <span class="text-title">Экспресс тест на антитела от коронавируса  SARS CoV-2</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide-inner">
-                                <div class="product-image">
-                                    <img src="..//images/rapid-covid-test.png" alt="h9">
-                                </div>
-                                <div class="product-text">
-                                    <h2>COVID-19</h2>
-                                    <span class="text-title">Экспресс тест на антитела от коронавируса  SARS CoV-2</span>
-                                </div>
-                            </div>
+                        <div class="pagination-cont">
+                            <span class="swiper-button-next-mi">
+                                Назад
+                            </span>
+                            <span class="swiper-button-prev-mi">
+                                Далее
+                            </span>
+                            <div class="swiper-pagination swiper-pagination-catalogue"></div>
+                            <button class="show-all">Показать еще</button>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
                 </div>
-        </section>
-        <footer>
+            </section>
+        </div>
+        <footer class="foo">
             <div class="addresses-contacts-cont">
                 <div class="address-home">
                     <a href="#">

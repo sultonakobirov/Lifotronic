@@ -6,14 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lifotronic</title>
     <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" media="(max-width:1700px)" href="../scss/media.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 <body>
+    <!-- <form style="display: flex; flex-direction: column; align-items: center; gap: 25px;" class="modal-window">
+        <h2>Хотите узнать цену?</h2>
+        <span>Заполни форму и в ближайшее время с вами свяжется наш менеджер</span>
+        <div style="display: flex; gap: 30px;" class="input-cont">
+            <span class="cross">X</span>
+            <input type="text">
+            <input type="tel">
+        </div>
+        <button style="font-weight: 700;
+        font-size: 16px;
+        line-height: 20px; padding: 15px 50px; max-width: 190px;">Отправить</button>
+    </form> -->
     <div class="container">
             <header class="header">
                 <div class="iconname-container">
                     <div class="icon">
-                        <a href="#">
+                        <a id="home" class="header-link" href="./index.html">
                         <img src="..//images/icon.svg" alt="icon">
                         </a>
                     </div>
@@ -21,13 +34,12 @@
                 </div>
                 <ul>
                     <li>
-                        <a href="#">
+                        <a id="description" class="header-link" href="#">
                             Lifotronic
                         </a>
                     </li>
-
                     <li class="catalogue">
-                        <a href="#">
+                        <a id="catalogue" class="header-link" href="#">
                             Каталог
                         </a>
                         <ul class="additional-list">
@@ -43,42 +55,86 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">
+                        <a id="news" class="header-link" href="#">
                             Новости
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a id="service-center" class="header-link" href="#">
                             Сервисный центр
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a id="contacts" class="header-link" href="#">
                             Контакты
                         </a>
                     </li>
                 </ul>
                 <div class="search-block">
-                    <a class="tel-number" href="#">
+                    <a class="tel-number" href="tel:+7 (343) 311-22-19">
                         +7 (343) 311-22-19
                     </a>
                     <input placeholder="Поиск..." class="search-input" type="text">
                     <img class="search-img" src="./images/search.svg" alt="search">
+                    
+                </div>
+                <div class="menu-btn">
+                    <div class="btn-line l1"></div>
+                    <div class="btn-line l2"></div>
+                    <div class="btn-line l3"></div>
+                  </div>
+                <div class="header-media">
+                    <ul>
+                        <li>
+                            <a id="description" class="header-link" href="#">
+                                Lifotronic
+                            </a>
+                        </li>
+                        <li class="catalogue">
+                            <a id="catalogue" class="" href="#">
+                                <button class="accordion">Каталог</button>
+                                <div class="panel">
+                                <ul class="">
+                                    <li><a href="./html/catalogue.html">HPLC system</a></li>
+                                    <li>ECLIA system</li>
+                                    <li>Hematology system</li>
+                                </ul>
+                                        
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="news" class="header-link" href="#">
+                                Новости
+                            </a>
+                        </li>
+                        <li>
+                            <a id="service-center" class="header-link" href="#">
+                                Сервисный центр
+                            </a>
+                        </li>
+                        <li>
+                            <a id="contacts" class="header-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </header>
         <main>
-            <section class="section-one">
+            <section name="home" class="section-one">
                 <div class="swiper mySwiper swiper-fade swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden">
                     <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper"></div>
+                    <div class="swiper-wrapper swiper-wrapper-page"></div>
                     <div class="swiper-buttons">
+                        <span id="current-slide">1</span>
                         <div class="swiper-pagination"></div>
                         <div class="swiper-next-section-one"></div>
                     </div>
                 </div>
             </section> <!-- section-one --> 
             <hr>
-            <section class="section-two">
+            <section name="description" class="section-two">
                 <div class="img-name-container">
                     <div class="red-block"></div>
                     <img src="./images/Lifotronic.png" alt="name">
@@ -93,77 +149,26 @@
                 </div>
             </section>
             <section class="section-three">
-                <div class="swiper mySwiper2">
-                    <div class="swiper-wrapper swiper-wrapper-custom">
-                        <div class="swiper-slide">
-                            <div class="product-image">
-                                <img src="./images/h8.svg" alt="h8">
-                            </div>
-                            <div class="product-text">
-                                <h2>H8 <span class="outline">H8</span></h2>
-                                <span  class="text-title">Aнализатор гемоглобина Lifotromic</span>
-                                <p>Полностью автоматизированный анализатор гемоглобина H8 сообщает результат HbA1c за 130 секунд с распознаванием вариантов гемоглобина, обеспечивая выдающееся решение для быстрого и надежного мониторинга диабета. Без пробоподготовки и безоперационной работы. Образцы с вариантами гемоглобина могут быть подвергнуты углубленному анализу в рамках программы β-талассемии.</p>
-                                <a href=""><button class="button-uni">Подробнее</button></a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-image">
-                                <img src="./images/h9.svg" alt="h9">
-                            </div>
-                            <div class="product-text">
-                                <h2>H9 <span class="outline">H9</span></h2>
-                                <span class="text-title">Aнализатор гемоглобина Lifotromic</span>
-                                <p>С учётом сложившейся международной обстановки, существующая теория предполагает независимые способы реализации экономической целесообразности принимаемых решений.</p>
-                                <a href=""><button class="button-uni">Подробнее</button></a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-image">
-                                <img src="./images/gh-900plus.png" alt="h9">
-                            </div>
-                            <div class="product-text">
-                                <h2>GH-900PLUS <span class="outline">GH-900PLUS</span></h2>
-                                <span class="text-title">Анализатор HbA1c</span>
-                                <p>Полностью автоматизированный анализатор HbA1c GH-900Plus сообщает результат HbA1c за 130 секунд с распознаванием вариантов Hb. Он обеспечивает выдающееся решение для надежного мониторинга диабета.</p>
-                                <a href=""><button class="button-uni">Подробнее</button></a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-image">
-                                <img src="./images/ecl8000.png" alt="h9">
-                            </div>
-                            <div class="product-text">
-                                <h2>ECL8000 <span class="outline">ECL8000</span></h2>
-                                <span class="text-title">Aнализатор гемоглобина Lifotromic</span>
-                                <p>eCL 8000 — это полностью автоматизированный анализатор с производительностью 86 Т/ч, основанный на самом передовом электрохемилюминесцентном иммуноанализе (ECLIA). Доступно более 90 параметров, охватывающих щитовидную железу, фертильность, опухоль, сердце, воспаление, маркер костного метаболизма и т. д.</p>
-                                <a href=""><button class="button-uni">Подробнее</button></a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-image">
-                                <img src="./images/rapid-covid-test.png" alt="h9">
-                            </div>
-                            <div class="product-text">
-                                <h2>COVID-19 <span class="outline">COVID-19</span></h2>
-                                <span class="text-title">Экспресс тест на антитела от коронавируса  SARS CoV-2</span>
-                                <p>Rapid test, или экспресс тест на коронавирус — это общее название нескольких быстрых методов определения заболевания. Тест является быстрой альтернативой ПЦР, не требующий лабораторного оборудования и специальных условий проведения.</p>
-                                <a href=""><button class="button-uni">Подробнее</button></a>
-                            </div>
+                <div name="catalogue" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                    <div class="swiper-wrapper swiper-wrapper-custom-big">
+                    </div>
+                </div>
+                <div class="left-right-wrapper">
+                    <div thumbsSlider="" class="swiper mySwiper3">
+                        <div class="swiper-wrapper swiper-wrapper-custom">
                         </div>
                     </div>
-                    <div class="swiper-pagination pagination-content"></div>
                     <div class="swiper-button-next next-custom">
-                        <img class="next" src="./images/next-button.png" alt="">
+                        <img src="./images/next-button.png" class="next">
                     </div>
                     <div class="swiper-button-prev prev-custom">
-                        <img class="prev" src="./images/next-button.png" alt="">
+                        <img src="./images/next-button.png" alt="" class="prev">
                     </div>
-                    <div class="swiper-pagination pagination-content"></div>
                 </div>
             </section>
             <hr class="start-line">
             <section class="section-four">
-                <div class="text-button-cont">
+                <div name="news" class="text-button-cont">
                     <ul>
                         <li>
                             <h2>Новости</h2>
@@ -192,10 +197,10 @@
                         <p>Обучение для инженеров сервисной службы DIRUI</p>
                         <a href="">Подробнее</a>
                     </div>
-                </div> 
+                </div>
             </section>
             <hr class="start-line hr-left">
-            <section class="section-five">
+            <section name="service-center" class="section-five">
                 <div class="text-button-cont">
                     <ul>
                         <li>
@@ -224,44 +229,64 @@
                         <span>Запчасти</span>
                     </div>
                 </div>
+                <div class="swiper mySwiper4 uslugi-cont-media">
+                    <div class="swiper-wrapper">
+                        <div class="uslugi swiper-slide">
+                            <img src="./images/Headsetheadphones.svg" alt="">
+                            <span>Консультация</span>
+                        </div>
+                        <div class="uslugi swiper-slide">
+                            <img src="./images/File-verified.svg" alt="">
+                            <span>Обзор сервисного центра</span>
+                        </div>
+                        <div class="uslugi swiper-slide">
+                            <img src="./images/in-protect.svg" alt="">
+                            <span>Техническое обслуживание</span>
+                        </div>
+                        <div class="uslugi swiper-slide">
+                            <img src="./images/Group.svg" alt="">
+                            <span>Запчасти</span>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
-            <div class="addresses-contacts-cont">
+            <div name="contacts" class="addresses-contacts-cont">
                 <div class="address-home">
-                    <a href="#">
+                    <a href="./index.html">
                         <img src="./images/Group 1.png" alt="">
                     </a>
                 </div>
                 <div class="address">
                     <img src="./images/Place-3.svg" alt="">
                     <div class="inner-box">
-                        <span class="add-text">г. Ростов-на-Дону, <br>
-                            пр. Шолохова, 136</span>
-                            <span class="tel">Тел.: +7 (906) 454-03-92, <br>
-                                E-mail: sale@omt-ofd.ru</span>
+                        <span class="add-text"><a href="https://www.google.com/maps/search/г. Ростов-на-Дону, пр. Шолохова, 136">г. Ростов-на-Дону, <br>
+                            пр. Шолохова, 136</a> </span>
+                            <span class="tel">Тел.: <a href="tel:+7 (906) 454-03-92">+7 (906) 454-03-92</a>, <br>
+                                E-mail: <a href="mailto:sale@omt-ofd.ru">sale@omt-ofd.ru</a></span>
                     </div>
                 </div>
                 <div class="address">
                     <img src="./images/Place-3.svg" alt="">
                     <div class="inner-box">
-                        <span class="add-text">г. Москва, <br>
-                            ул. Новодмитровская, 5А стр. 1</span>
-
-                            <span class="tel">Тел.: +7 (495) 287-89-80, <br>
-                                E-mail: micros@micros-russia.com</span>
+                        <span class="add-text"> <a href="https://www.google.com/maps/search/г. Москва, ул. Новодмитровская, 5А стр. 1">г. Москва, <br> ул. Новодмитровская, 5А стр. 1</a>  
+                            </span>
+                            <span class="tel">Тел.: <a href="tel:+7 (495) 287-89-80">+7 (495) 287-89-80</a>, <br>
+                                E-mail: <a href="mailto:micros@micros-russia.com">micros@micros-russia.com</a></span>
                     </div>
                 </div>
                 <div class="address">
                     <img src="./images/Place-3.svg" alt="">
                     <div class="inner-box">
-                        <span class="inner-box">г. Екатеринбург, <br> 
-                            ул. Ясная, 35</span>
-                        <span class="tel">Тел.: +7 (343) 311-11-19, <br>
-                            E-mail: dirui@omt-ural.ru</span>
+                        <span class="inner-box"><a href="https://www.google.com/maps/search/г. Екатеринбург, ул. Ясная, 35">г. Екатеринбург, <br> 
+                            ул. Ясная, 35</a> </span>
+                        <span class="tel">Тел.: <a href="tel:+7 (343) 311-11-19">+7 (343) 311-11-19</a>, <br>
+                            E-mail: <a href="mailto:dirui@omt-ural.ru">dirui@omt-ural.ru</a></span>
                     </div>
-                </div>
+                </div>  
             </div>
+            <hr class="grey-hr">
             <div class="info">
                 <p>© 2015 ООО "МО Отдел медицинской техники"Копирование информации с сайта разрешено только с письменного согласия администрации сайта.</p>
             </div>
