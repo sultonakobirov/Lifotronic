@@ -9,7 +9,7 @@
     <title>Lifotronic</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
-<body style="background-color: #e1e1e145;">
+<body>
     <header class="header">
         <div class="iconname-container">
             <div class="icon">
@@ -25,7 +25,6 @@
                     Lifotronic
                 </a>
             </li>
-
             <li class="catalogue">
                 <a id="catalogue" class="header-link" href="#">
                     Каталог
@@ -109,83 +108,82 @@
             </ul>
         </div>
     </header>
-    <div class="container cont-cat">
-        <div class="anti-wrapper">
-            <section class="side-bar">
-                <ul>
-                    <li class="redd">HPLC система <span></span></li>
-                    <li>ECLIA система <span></span></li>
-                    <li>Гематологическая система <span></span></li>
-                    <li>POCT <span></span></li>
-                    <li>Молекулярная диагностика <span></span></li>
-                    <li>Экспресс-тест <span></span></li>
-                </ul>
-            </section>
-            <section class="section-catalogue">
-                <div class="text">
-                    <span>Главная  -  Каталог</span>
-                    <h1>HPLC cистема</h1>
-                </div>
-                <div style="display: none;" class="normal-section">
-                </div>
-                <div class="swiper-contentt">
-                    <div class="swiper mySwiper5">
-                        <div class="swiper-wrapper catalogue-wrapper">
-                        </div>
-                        <div class="pagination-cont">
-                            <span class="swiper-button-next-mi">
-                                Назад
-                            </span>
-                            <span class="swiper-button-prev-mi">
-                                Далее
-                            </span>
-                            <div class="swiper-pagination swiper-pagination-catalogue"></div>
-                            <button class="show-all">Показать еще</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <section class="section-catalogue">
+        <div class="sidebar">
+            <select style="display: none;" name="" id="">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <ul>
+                <li class="active-red">HPLC система <span></span></li>
+                <li>ECLIA система <span></span></li>
+                <li>Гематологическая система <span></span></li>
+                <li>POCT <span></span></li>
+                <li>Молекулярная диагностика <span></span></li>
+                <li>Экспресс-тест <span></span></li>
+            </ul>
         </div>
-        <footer class="foo">
-            <div class="addresses-contacts-cont">
-                <div class="address-home">
-                    <a href="#">
-                        <img src="..//images/Group 1.png" alt="">
-                    </a>
-                </div>
-                <div class="address">
-                    <img src="..//images/Place-3.svg" alt="">
-                    <div class="inner-box">
-                        <span class="add-text">г. Ростов-на-Дону, <br>
-                            пр. Шолохова, 136</span>
-                            <span class="tel">Тел.: +7 (906) 454-03-92, <br>
-                                E-mail: sale@omt-ofd.ru</span>
-                    </div>
-                </div>
-                <div class="address">
-                    <img src="..//images/Place-3.svg" alt="">
-                    <div class="inner-box">
-                        <span class="add-text">г. Москва, <br>
-                            ул. Новодмитровская, 5А стр. 1</span>
-                            <span class="tel">Тел.: +7 (495) 287-89-80, <br>
-                                E-mail: micros@micros-russia.com</span>
-                    </div>
-                </div>
-                <div class="address">
-                    <img src="..//images/Place-3.svg" alt="">
-                    <div class="inner-box">
-                        <span class="inner-box">г. Екатеринбург, <br> 
-                            ул. Ясная, 35</span>
-                        <span class="tel">Тел.: +7 (343) 311-11-19, <br>
-                            E-mail: dirui@omt-ural.ru</span>
-                    </div>
+        <div class="main-content">
+            <span>Главная  -  Каталог</span>
+            <h2>HPLC cистема</h2>
+            <div class="goods">
+            </div>
+            <div class="pagination-container">
+                <button class="prev">Назад</button>
+                <ul class="pagination"></ul>
+                <button class="next">Далее</button>
+                <input style="display: none;" type="checkbox" name="" id="">
+                <label for="">
+                    <button class="show-all">Показать ещё</button>
+                </label>
+            </div>
+        </div>
+    </section>
+    <footer class="foo">
+        <div class="addresses-contacts-cont">
+            <div class="address-home">
+                <a href="#">
+                    <img src="..//images/Group 1.png" alt="">
+                </a>
+            </div>
+            <div class="address">
+                <img src="..//images/Place-3.svg" alt="">
+                <div class="inner-box">
+                    <span class="add-text">г. Ростов-на-Дону, <br>
+                        пр. Шолохова, 136</span>
+                        <span class="tel">Тел.: +7 (906) 454-03-92, <br>
+                            E-mail: sale@omt-ofd.ru</span>
                 </div>
             </div>
-            <div class="info">
-                <p>© 2015 ООО "МО Отдел медицинской техники"Копирование информации с сайта разрешено только с письменного согласия администрации сайта.</p>
+            <div class="address">
+                <img src="..//images/Place-3.svg" alt="">
+                <div class="inner-box">
+                    <span class="add-text">г. Москва, <br>
+                        ул. Новодмитровская, 5А стр. 1</span>
+                        <span class="tel">Тел.: +7 (495) 287-89-80, <br>
+                            E-mail: micros@micros-russia.com</span>
+                </div>
             </div>
-        </footer>
+            <div class="address">
+                <img src="..//images/Place-3.svg" alt="">
+                <div class="inner-box">
+                    <span class="inner-box">г. Екатеринбург, <br> 
+                        ул. Ясная, 35</span>
+                    <span class="tel">Тел.: +7 (343) 311-11-19, <br>
+                        E-mail: dirui@omt-ural.ru</span>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <p>© 2015 ООО "МО Отдел медицинской техники"Копирование информации с сайта разрешено только с письменного согласия администрации сайта.</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="../js/catalogue.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

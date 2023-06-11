@@ -150,11 +150,6 @@ document.querySelector('.search-img').addEventListener('click', ()=>{
 document.querySelector('.header-media').addEventListener('click', function () {
     
 })
-// let allLinks = document.querySelectorAll('a')
-// for (let link of allLinks) {
-//     link.addEventListener('click',  function (e) {
-//         e.preventDefault()})
-// }
 
 let swiper3 = new Swiper(".mySwiper3", {
     spaceBetween: 25,
@@ -163,30 +158,30 @@ let swiper3 = new Swiper(".mySwiper3", {
     watchSlidesProgress: true,
     breakpoints: {
         280: {
-          slidesPerView: 1,
-          spaceBetween: 20,
+            slidesPerView: 1,
+            spaceBetween: 20,
         },
         420: {
             slidesPerView: 2,
             spaceBetween: 20,
-          },
+        },
         720: {
             slidesPerView: 3,
             spaceBetween: 20,
-          },
-        1080: {
-          slidesPerView: 4,
-          spaceBetween: 40,
         },
-        1500: {
-          slidesPerView: 4,
-          spaceBetween: 50,
+        1080: {
+            slidesPerView: 4,
+            spaceBetween: 40,
         },
     }
 });
 let swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 10,
     allowTouchMove: false,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
     breakpoints: {
         320: {
             spaceBetween: 100,
@@ -264,7 +259,7 @@ for (let item of allContent) {
     customWrapperText.appendChild(contentDescription)
     customWrapperText.appendChild(buttonMoreInfo)
 }
-//console.log(swiperWrapperCustomBig);
+
 let uslugiCards = document.querySelector('.uslugi-cont').querySelectorAll('.uslugi')
 for (let uslugi of uslugiCards) {
     uslugi.addEventListener('mouseover', ()=>{
@@ -355,5 +350,13 @@ for (i = 0; i < acc.length; i++) {
     } else {
         panel.style.display = "block";
     }
-  });
+});
+}
+let allbuttons = document.querySelectorAll('button')
+
+for (let button of allbuttons) {
+    button.addEventListener('click', function (){
+        document.querySelector('.modal-window').style.zIndex = '99' 
+        document.querySelector('.modal-window').style.display = '99' 
+    })
 }

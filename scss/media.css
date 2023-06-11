@@ -56,52 +56,24 @@
     flex-wrap: wrap;
     gap: 30px;
   }
-  .anti-wrapper {
-    padding: 10px 20px;
-  }
-  .anti-wrapper .side-bar {
-    display: none;
-  }
-}
-@media (max-width: 1180px) {
-  .anti-wrapper {
-    translate: 0;
-    max-width: 600px;
-    width: 100%;
-    translate: 0;
-  }
-  .anti-wrapper .section-catalogue .pagination-cont {
-    max-width: 600px;
-    width: 100%;
-    translate: 20%;
-  }
-  .anti-wrapper .section-catalogue .pagination-cont .swiper-pagination {
-    translate: -100px -25px;
-    padding: 0;
-    margin: 0;
-  }
-  .anti-wrapper .section-catalogue .pagination-cont .swiper-pagination span {
-    background-color: rgba(0, 0, 0, 0);
-    color: #292D32;
-    font-size: 20px;
-  }
-  .anti-wrapper .section-catalogue .swiper-button-prev-mi {
-    translate: 0px 5px;
-  }
-  .anti-wrapper .section-catalogue .swiper-button-next-mi {
-    translate: 0px 5px;
-  }
 }
 @media (max-width: 1080px) {
   .header {
-    width: 90%;
-    max-width: 1000px;
+    max-width: 900;
+    width: 80%;
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+  .header .iconname-container {
+    position: absolute;
+    left: 30px;
   }
   .header ul {
     display: none;
   }
   .header .tel-number {
     display: none;
+    color: #ffffff;
   }
   .header .search-block {
     justify-content: flex-end;

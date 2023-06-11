@@ -68,56 +68,24 @@
             gap: 30px;
         }
     }
-    .anti-wrapper{
-        padding: 10px 20px;
-        .side-bar{
-            display: none;
-        }
-    }
 }
-@media (max-width:1180px) {
-    .anti-wrapper{
-        translate: 0;
-        max-width: 600px;
-        width: 100%;
-        translate: 0;
-        .section-catalogue{
-            .pagination-cont{
-                max-width: 600px;
-                width: 100%;
-                translate: 20%;
-            .swiper-pagination{
-                translate: -100px -25px;
-                padding: 0;
-                margin: 0;
-                span{
-                    background-color: #00000000;
-                    color: #292D32;
-                    font-size: 20px;
-                }
-                
-            }
-            }
-            .swiper-button-prev-mi{
-                translate: 0px 5px;
-                
-            }
-            .swiper-button-next-mi{
-                translate: 0px 5px;
-                
-            }
-        }
-    } 
-}
+
 @media (max-width:1080px) {
     .header{
-        width: 90%;
-        max-width: 1000px;
+        max-width: 900;
+        width: 80%;
+        justify-content: flex-end;
+        padding-right: 50px;
+        .iconname-container{
+            position: absolute;
+            left: 30px;
+        }
         ul{
             display: none;
         }
         .tel-number{
             display: none;
+            color: #ffffff;
         }
         .search-block{
             justify-content: flex-end;
